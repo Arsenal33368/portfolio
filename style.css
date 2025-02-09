@@ -1,74 +1,74 @@
 body {
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
-    background-image: linear-gradient(rgb(216, 244, 253), lightblue,rgb(228, 248, 255));
+    background-color: #f5f5f7; /* Светлый фон */
+    color: #333; /* Темный текст */
 }
 
-
-header{
-    background-color: rgb(89, 255, 0);
-    padding: 12px;
+header {
+    background-color: #ffffff; /* Белый фон */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
 }
 
-footer{
+footer {
     margin: 0;
-    padding: 14px;
+    padding: 20px;
+    background-color: #ffffff; /* Белый фон */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
 }
 
-a{
+a {
     text-decoration: none;
-    background-color: #d25e5e;
-    padding: 6px;
-    border-radius: 15px;
-    color: black;
-    box-shadow: 3px 3px 1px 0 rgb(139, 0, 0);
-}
-
-a:hover{
+    background-color: #007aff; /* Цвет ссылки в стиле Apple */
+    padding: 10px 15px;
+    border-radius: 8px; /* Углы более округлые */
     color: white;
-    background-color: #6b0000;
-    box-shadow: 3px 3px 1px 0 rgb(0, 0, 0);
+    transition: background-color 0.3s, box-shadow 0.3s; /* Плавный переход */
 }
 
-h1{
+a:hover {
+    background-color: #0051a8; /* Темнее при наведении */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Легкая тень при наведении */
+}
+
+h1 {
     text-align: center;
-    
+    font-size: 2.5em; /* Увеличенный размер заголовка */
+    margin: 20px 0;
 }
 
-.firstimg{
-    float: left;
+.firstimg, .secondimg {
     display: flex;
-    
+    justify-content: center; /* Центрирование изображений */
+    margin: 20px 0;
 }
 
-.secondimg{
-    float:left;
-    display: flex;
-    
+img {
+    max-width: 100%; /* Адаптивные изображения */
+    height: auto;
+    border-radius: 10px; /* Округлые углы для изображений */
 }
 
-img{
+.text-big {
     margin: 20px;
+    font-size: 1.2em; /* Увеличенный размер текста */
 }
 
-.text-big{
-    margin: 10px;
-    color: rgb(0, 0, 0);
-    
+.link-header {
+    margin-right: 20px;
 }
 
-.link-header{
-    margin-right:  20px;
-}
-
-.link-nav{
+.link-nav {
     margin-left: 5px;
-    background-color: white;
-    box-shadow: 3px 3px 1px 0 rgb(210, 210, 210);
+    background-color: #f5f5f7; /* Светлый фон */
+    border: 1px solid #d1d1d6; /* Легкая граница */
+    border-radius: 8px; /* Углы более округлые */
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход */
 }
 
-.link-nav:hover{
+.link-nav:hover {
     color: white;
-    background-color: #292929;
-    box-shadow: 3px 3px 1px 0 rgb(0, 0, 0);
+    background-color: #007aff; /* Цвет ссылки при наведении */
 }
